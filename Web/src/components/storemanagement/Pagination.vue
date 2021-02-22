@@ -21,6 +21,9 @@
       <div class="icon-group">
         <i class="pagi-icon" id="icon-loadpage"></i>
       </div>
+      <select class="pagi-select">
+        <option value="0">50</option>
+      </select>
     </div>
     <div class="pagi-right">
       <p>Hiển thị {{ Stores.length }} trên {{ quantityStore }} kết quả</p>
@@ -70,7 +73,6 @@ export default {
 </script>
 <style scoped>
 .pagi-left-text {
-  margin-right: 10px;
   margin-left: 10px;
   width: 30%;
 }

@@ -1,7 +1,7 @@
 .store-dialog {
   display: block;
   width: 700px;
-  left: 43%;
+  left: 50%;
   transform: translateX(-50%);
   position: absolute;
   border: 1px solid #d1f1ff;
@@ -273,7 +273,7 @@
   cursor: pointer;
 }
 .btn-footer .btn-delete:hover {
-  background-color: #cc4646;
+  background-color: #e41717;
   cursor: pointer;
 }
 

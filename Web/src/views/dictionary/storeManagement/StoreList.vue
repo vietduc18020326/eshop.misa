@@ -6,26 +6,46 @@
         <div class="s-table" id="style-scroll">
           <table>
             <thead>
-              <tr class="row search">
-                <th>
+              <tr class="row">
+                <th id="storecode">
                   Mã cửa hàng <br />
-                  <input type="text" />
+                  <div class="search-group">
+                    <div class="input-group">
+                      <button>*</button>
+                      <input type="text" class="search" />
+                    </div>
+                  </div>
                 </th>
-                <th>
+                <th id="storename">
                   Tên cửa hàng<br />
-                  <input type="text" />
+                  <div class="search-group">
+                    <div class="input-group">
+                      <button class="item-center">*</button>
+                      <input type="text" class="search" />
+                    </div>
+                  </div>
                 </th>
-                <th style="width: 50%">
+                <th id="storeaddress">
                   Địa chỉ <br />
-                  <input type="text" style="width: 100%" />
+                  <div class="search-group">
+                    <div class="input-group">
+                      <button>*</button>
+                      <input type="text" class="search" />
+                    </div>
+                  </div>
                 </th>
-                <th>
+                <th id="storephone">
                   Số điện thoại<br />
-                  <input type="text" />
+                  <div class="search-group">
+                    <div class="input-group">
+                      <button>*</button>
+                      <input type="text" class="search" />
+                    </div>
+                  </div>
                 </th>
-                <th>
+                <th id="storestatus">
                   Trạng thái<br />
-                  <select>
+                  <select class="search-group">
                     <option value="0">Đang hoạt động</option>
                     <option value="1">Đang đóng cửa</option>
                   </select>
@@ -37,7 +57,8 @@
                 v-for="(store, index) in Stores"
                 :key="index"
                 @click="handleClick(index)"
-                :class="{ row: index % 2 }"
+                class="data-row"
+                :id="index"
               >
                 <td>{{ store.StoreCode }}</td>
                 <td>{{ store.StoreName }}</td>
@@ -149,6 +170,15 @@ export default {
     handleClick: function(index) {
       this.Store = this.Stores[index];
       this.isClickRow = true;
+      var trList = document.querySelectorAll(".data-row");
+      for (let tr of trList) {
+        if (tr.classList.contains("row_active")) {
+          tr.classList.remove("row_active");
+          break;
+        }
+      }
+      var clickedTr = document.getElementById(index);
+      clickedTr.classList.add("row_active");
       this.$emit("ClickStore", this.Store.StoreName);
     },
     statusStore: function(status) {
@@ -161,20 +191,13 @@ export default {
       return "";
     },
   },
-  filters: {},
+  watch: {
+    isArrayClickRow: {
+      handler() {},
+    },
+  },
 };
 </script>
 <style scoped>
-.row {
-  background-color: #F0F0F0;
-}
-.back_dialog {
-  background: black;
-  opacity: 0.4;
-  width: 117%;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: -17%;
-}
+
 </style>

@@ -62,3 +62,10 @@
   width: 10px;
   height: 14px;
 }
+.pagi-select{
+  width: 40px;
+  height: 25px;
+  border-radius: 4%;
+  border: 1px solid #bbbbbb;
+  outline: none;
+}

@@ -11,6 +11,7 @@ body {
 }
 #app {
   position: relative;
+  display: flex;
 }
 .panel-left {
   width: 200px;
@@ -18,8 +19,8 @@ body {
   background-color: #026b97;
 }
 .panel-right {
-  position: absolute;
-  left: 200px;
+  /* position: absolute;
+  left: 200px; */
   width: calc(100% - 200px);
   height: 100vh;
   top: 0px;
