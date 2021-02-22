@@ -1,0 +1,91 @@
+.header {
+  width: 100%;
+  height: 8vh;
+}
+.header-left {
+  width: 200px;
+  height: 100%;
+  float: left;
+  align-items: center;
+  padding-left: 30px;
+  display: flex;
+}
+.header-right {
+  width: 480px;
+  height: 100%;
+  align-items: center;
+  float: right;
+  display: flex;
+}
+.header-right .account {
+  display: flex;
+  align-items: center;
+  /* margin-top: 10px; */
+  margin-right: 10px;
+}
+.header-right select {
+  width: 260px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5%;
+  /* margin-top: 10px; */
+  margin-right: 10px;
+}
+.header-right .account .username {
+  margin: 5px;
+}
+.header-right .account .user-icon {
+  width: 25px;
+  height: 25px;
+  background-color: #d1f1ff;
+  border-radius: 45%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../../content/icon/EmployeeImage.png");
+}
+.header-right .x-btn-help {
+  width: 10%;
+  height: 100%;
+  padding: 20p;
+  background-color: #00577b;
+}
+.header-right .x-btn-help:hover {
+  cursor: pointer;
+  background-color: #0088c1;
+}
+.header-right .item-center .btn-help {
+  background: url("../../content/icon/iconHelp.png") no-repeat;
+  width: 24px;
+  height: 24px;
+  margin-left: 9px;
+}
+.header-right .x-btn-callcenter {
+  width: 10%;
+  height: 100%;
+}
+.header-right .x-btn-callcenter .icon-telephone {
+  background-image: url("../../content/icon/telephone.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+}
+.header-right .x-btn-notify {
+  width: 10%;
+  height: 100%;
+}
+.header-right .x-btn-notify .icon-notify {
+  background-image: url("../../content/icon/notification.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+}
+.header-right .x-btn-notify:hover,
+.header-right .x-btn-callcenter:hover {
+  cursor: pointer;
+  background-color: #d1f1ff;
+}
+.clear {
+  clear: both;
+}

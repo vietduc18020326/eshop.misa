@@ -1,0 +1,75 @@
+.panel-left .logo {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background-color: #00577b;
+  align-items: center;
+}
+.panel-left .logo .icon-logo {
+  width: 100%;
+  height: 60px;
+  background-size: contain;
+  background-image: url("../../content/img/Logo_Full_White.png");
+  background-repeat: no-repeat;
+  margin-left: 10px;
+}
+.menu {
+  width: 100%;
+}
+.menu .menu-item {
+  display: flex;
+
+  width: 82%;
+  align-items: left;
+  padding-left: 25px !important;
+  padding: 10px;
+  text-decoration: none;
+  border-bottom: 1px solid #016087;
+  border-top: 1px solid #038ac1;
+}
+.menu .menu-item:hover {
+  background-color: #0088c1;
+  cursor: pointer;
+}
+.menu .menu-item .menu-text {
+  color: white;
+  margin-left: 10px;
+}
+.menu .menu-item .menu-icon {
+  background: url("../../content/icon/iconMenu.png") no-repeat;
+}
+.menu .menu-item #overview {
+  background-position: -5px -5px;
+  width: 20px;
+  height: 16px;
+}
+.menu .menu-item #report {
+  background-position: -3px -194px;
+  width: 19px;
+  height: 19px;
+}
+.menu .menu-item #promotion {
+  background-position: -3px -118px;
+  width: 21px;
+  height: 23px;
+}
+.menu .menu-item #purchases {
+  background-position: -1px -377px;
+  width: 24px;
+  height: 19px;
+}
+.menu .menu-item #order {
+  background-position: -5px -458px;
+  width: 20px;
+  height: 22px;
+}
+.menu .menu-item #storemanagement {
+  background-position: -3px -160px;
+  width: 18px;
+  height: 15px;
+}
+.menu .menu-item #goods {
+  background-position: -2px -502px;
+  width: 26px;
+  height: 15px;
+}

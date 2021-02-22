@@ -1,0 +1,180 @@
+<template>
+  <div class="content">
+    <div class="content-center">
+      <ButtonEvent @OpenDialog="openDialog" />
+      <div class="content-body">
+        <div class="s-table" id="style-scroll">
+          <table>
+            <thead>
+              <tr class="row search">
+                <th>
+                  Mã cửa hàng <br />
+                  <input type="text" />
+                </th>
+                <th>
+                  Tên cửa hàng<br />
+                  <input type="text" />
+                </th>
+                <th style="width: 50%">
+                  Địa chỉ <br />
+                  <input type="text" style="width: 100%" />
+                </th>
+                <th>
+                  Số điện thoại<br />
+                  <input type="text" />
+                </th>
+                <th>
+                  Trạng thái<br />
+                  <select>
+                    <option value="0">Đang hoạt động</option>
+                    <option value="1">Đang đóng cửa</option>
+                  </select>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                v-for="(store, index) in Stores"
+                :key="index"
+                @click="handleClick(index)"
+                :class="{ row: index % 2 }"
+              >
+                <td>{{ store.StoreCode }}</td>
+                <td>{{ store.StoreName }}</td>
+                <td>{{ store.Address }}</td>
+                <td>{{ store.PhoneNumber }}</td>
+                <td>{{ statusStore(store.Status) }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <Pagination
+        @loadData="loadStore"
+        :quantityStore="quantityStore"
+        :Stores="Stores"
+      />
+      <div :class="{ back_dialog: isDialog }"></div>
+      <StoreProfileDetail
+        v-if="isDialogAdd | isDialogUpdate"
+        @CloseDialog="closeDialog"
+        :isDialog="isDialogAdd"
+        :isUpdate="isDialogUpdate"
+        :store="Store"
+      />
+      <DialogWarn
+        v-if="isDialogDelete"
+        @CloseDialog="closeDialog"
+        :store="Store"
+      />
+    </div>
+  </div>
+</template>
+<script>
+import ButtonEvent from "../../../components/storemanagement/ButtonEvent";
+import Pagination from "../../../components/storemanagement/Pagination";
+import StoreProfileDetail from "./StoreProfileDetail";
+import DialogWarn from "../../../components/storemanagement/DialogWarn";
+import storeServices from "../../../services/storeServices";
+
+export default {
+  name: "StoreList",
+  components: {
+    ButtonEvent,
+    Pagination,
+    StoreProfileDetail,
+    DialogWarn,
+  },
+  data() {
+    return {
+      Stores: [],
+      Store: {},
+      isDialog: false,
+      isDialogAdd: false,
+      isDialogDelete: false,
+      isDialogUpdate: false,
+      isClickRow: false,
+      quantityPage: 0,
+      quantityStore: 0,
+      pagi: 10,
+      offset: 0,
+    };
+  },
+  async mounted() {
+    this.quantityStore = await storeServices.quantityStore();
+    this.quantityPage = Math.ceil(this.quantityStore / this.pagi);
+    this.Stores = await storeServices.GetStoreOfPage(
+      this.offset,
+      this.quantityPage
+    );
+  },
+  methods: {
+    openDialog: function(dialogAdd, dialogDelete, dialogUpdate) {
+      this.isDialog = true;
+      this.isDialogAdd = dialogAdd;
+      this.isDialogDelete = dialogDelete;
+      this.isDialogUpdate = dialogUpdate;
+      if (!this.isClickRow && dialogUpdate) {
+        this.isDialog = false;
+        this.isDialogUpdate = false;
+      }
+      if (!this.isClickRow && dialogDelete) {
+        this.isDialog = false;
+        this.isDialogDelete = false;
+      }
+      if (this.isDialogAdd) this.Store = {};
+    },
+    closeDialog: async function() {
+      this.isDialog = false;
+      this.isDialogAdd = false;
+      this.isDialogDelete = false;
+      this.isDialogUpdate = false;
+      this.isClickRow = false;
+      this.Store = {
+        Status: 1,
+      };
+      this.Stores = await storeServices.GetStoreOfPage(
+        this.offset,
+        this.quantityPage
+      );
+      this.$emit("ClickStore", this.Store.StoreName);
+    },
+    loadStore: async function(number) {
+      this.offset = (number - 1) * this.quantityPage;
+      this.Stores = await storeServices.GetStoreOfPage(
+        this.offset,
+        this.quantityPage
+      );
+    },
+    handleClick: function(index) {
+      this.Store = this.Stores[index];
+      this.isClickRow = true;
+      this.$emit("ClickStore", this.Store.StoreName);
+    },
+    statusStore: function(status) {
+      if (status == 0) {
+        return "Đang đóng cửa";
+      }
+      if (status == 1) {
+        return "Đang hoạt động";
+      }
+      return "";
+    },
+  },
+  filters: {},
+};
+</script>
+<style scoped>
+.row {
+  background-color: #e5e5e5;
+}
+.back_dialog {
+  background: black;
+  opacity: 0.4;
+  width: 117%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: -17%;
+}
+</style>

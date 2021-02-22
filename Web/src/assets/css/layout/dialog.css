@@ -1,0 +1,277 @@
+.store-dialog {
+  display: block;
+  width: 700px;
+  left: 42%;
+  transform: translateX(-50%);
+  position: absolute;
+  border: 1px solid #d1f1ff;
+  background: white;
+  top: 10%;
+}
+.store-dialog input[type="text"],
+.store-dialog textarea,
+.store-dialog select {
+  width: 82%;
+  margin-left: 10px;
+  height: 5vh;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 3px;
+  resize: vertical;
+}
+.form-body .input-requied .input-title {
+  width: 16%;
+  margin-top: 10px;
+}
+.store-dialog .form-header {
+  width: 100%;
+  height: 6vh;
+  background-color: #fff3eb;
+}
+.store-dialog .form-header .title {
+  float: left;
+  width: 25%;
+  height: 100%;
+}
+.store-dialog .form-header .btn-x {
+  float: right;
+  width: 5%;
+  height: 100%;
+}
+.store-dialog .form-header .btn-x .icon-x {
+  background: url("../../content/icon/common-icon.png") no-repeat -1104px -130px;
+  width: 12px;
+  height: 11px;
+}
+.store-dialog .form-header .btn-x .icon-x:hover {
+  cursor: pointer;
+}
+
+.store-dialog .form-body {
+  width: 100%;
+  height: 59vh;
+}
+.store-dialog .form-body .input-requied {
+  width: 100%;
+  display: flex;
+  margin-bottom: 23px;
+  position: relative;
+}
+#store-address {
+  height: 10vh !important;
+}
+
+.store-dialog .form-body .store-left {
+  float: left;
+  display: flex;
+  width: 50%;
+}
+.store-dialog .form-body .store-right {
+  float: right;
+  display: flex;
+  width: 48%;
+}
+.store-left .input-title {
+  width: 34%;
+  margin-top: 16px;
+}
+.store-right .input-title {
+  width: 23%;
+  margin-top: 16px;
+  margin-right: 26px;
+}
+.input-notrequied {
+  width: 66% !important;
+  margin-left: 4px !important;
+  margin-top: 10px !important;
+}
+
+.store-dialog .form-footer {
+  width: 100%;
+  height: 8vh;
+  border-top: 1px solid #bbbbbb;
+  background-color: white;
+}
+.store-dialog .form-footer .store-left {
+  float: left;
+  height: 100%;
+  width: 15%;
+  color: #00577b;
+}
+.store-dialog .form-footer .store-right {
+  width: 43%;
+  float: right;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.store-dialog .form-footer .store-right button {
+  border-radius: 4px;
+  margin-right: 10px;
+  height: 6vh;
+}
+.store-dialog .form-footer .store-right .btn-save {
+  width: 23%;
+  background-color: #00577b;
+}
+.store-dialog .form-footer .store-right .btn-save .icon-save {
+  background: url("../../content/icon/common-icon.png") no-repeat -330px -129px;
+  width: 11px;
+  height: 11px;
+  margin-right: 7px;
+}
+.store-dialog .form-footer .store-right .btn-add {
+  width: 45%;
+  background-color: white;
+  border: 2px solid #00577b;
+}
+.store-dialog .form-footer .store-right .btn-add .icon-add {
+  background: url("../../content/icon/common-icon.png") no-repeat -29px -130px;
+  width: 11px;
+  height: 10px;
+  margin-right: 7px;
+}
+.store-dialog .form-footer .store-right .btn-cancel {
+  margin-left: 10px;
+  width: 25%;
+}
+.store-dialog .form-footer .store-right .btn-cancel .icon-x {
+  background: url("../../content/icon/common-icon.png") no-repeat -1104px -130px;
+  width: 12px;
+  height: 11px;
+  margin-right: 7px;
+}
+.store-dialog .form-footer .store-right .btn-save:hover {
+  cursor: pointer;
+  background-color: #0088c1;
+}
+.store-dialog .form-footer .store-right .btn-cancel:hover,
+.store-dialog .form-footer .store-right .btn-add:hover {
+  cursor: pointer;
+  background-color: #d1f1ff;
+}
+
+.warn {
+  display: block;
+  width: 35%;
+  height: 23vh;
+  position: absolute;
+  border: 1px solid #d1f1ff;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  z-index: 9;
+}
+.warn .warn-header .warn-left #title {
+  margin: 24px;
+  font-weight: bold;
+  font-size: 15px;
+}
+.warn .warn-header {
+  width: 100%;
+  height: 6vh;
+  background-color: #d1f1ff;
+}
+.warn .warn-header .warn-left {
+  float: left;
+  width: 33%;
+  height: 100%;
+}
+.warn .warn-header .warn-right {
+  float: right;
+  height: 100%;
+  width: 9%;
+}
+.warn .warn-header .warn-right:hover {
+  cursor: pointer;
+}
+.warn .warn-header .warn-right .icon-x {
+  background: url("../../content/icon/common-icon.png") no-repeat -1104px -130px;
+  width: 12px;
+  height: 11px;
+}
+.warn-body {
+  margin-top: 10px;
+  width: 100%;
+  height: 8vh;
+  border-bottom: 1px solid #d1f1ff;
+}
+.warn-body .icon-warn {
+  background-image: url(../../content/icon/iconfinder_ic_help_48px_3669173.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20%;
+  height: 80%;
+  margin-left: 15px;
+}
+#title-warn {
+  padding: 15px;
+}
+.warn .btn-footer {
+  margin-right: 24px;
+  width: 100%;
+  height: 7vh;
+}
+.warn .btn-footer .btn-warn {
+  height: 100%;
+  width: 51%;
+  float: right;
+  display: flex;
+  align-items: center;
+}
+.warn .btn-footer .btn-warn button {
+  height: 80%;
+  width: 100px;
+  border-radius: 5px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.btn-footer .btn-cancel {
+  background-color: white;
+  height: 75%;
+  width: 100px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.btn-footer .btn-delete {
+  background-color: #2ca434;
+  margin-left: 16px;
+  width: 34% !important;
+  color: white;
+}
+.btn-footer .btn-delete .icon-delete {
+  background: url("../../content/icon/common-icon.png") no-repeat -1080px -129px;
+  width: 10px;
+  height: 12px;
+  margin-right: 9px;
+  margin-top: -3px;
+}
+.btn-footer .btn-cancel .icon-x {
+  background: url("../../content/icon/common-icon.png") no-repeat -1104px -130px;
+  width: 12px;
+  height: 11px;
+  margin-right: 10px;
+}
+.btn-footer .btn-cancel:hover {
+  background-color: #dadce0;
+  cursor: pointer;
+}
+.btn-footer .btn-delete:hover {
+  background-color: #3ec347;
+  cursor: pointer;
+}
+
+.icon_err {
+  background: url("../../content/icon/common-icon.png") no-repeat -303px -3px;
+  width: 13px;
+  height: 12px;
+  position: absolute;
+  right: 4%;
+  top: 35%;
+}

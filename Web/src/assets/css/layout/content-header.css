@@ -1,0 +1,64 @@
+.content-header {
+  width: 100%;
+  height: 6vh;
+  background-color: #00577b;
+  display: flex;
+}
+.content .content-center {
+  padding: 10px;
+}
+.content-header .btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 100%;
+  width: 8%;
+  border-right: 1px solid #013247;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.content-header .btn-group-v2 {
+  color: white;
+  height: 100%;
+  width: 5%;
+  border-right: 1px solid #013247;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.content-header .btn-group:hover,
+.content-header .btn-group-v2:hover {
+  cursor: pointer;
+  background-color: #0b0147;
+}
+.content-header .btn-group .btn-icon,
+.content-header .btn-group-v2 .btn-icon {
+  background: url("../../content/icon/common-icon.png");
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+.content-header .btn-group #icon-add {
+  background-position: -154px -205px;
+  width: 12px;
+  height: 11px;
+}
+.content-header .btn-group #icon-humane {
+  background-position: -978px -127px;
+  width: 15px;
+  height: 15px;
+}
+.content-header .btn-group-v2 #icon-update {
+  background-position: -1454px -129px;
+  width: 12px;
+  height: 12px;
+}
+.content-header .btn-group-v2 #icon-delete {
+  background-position: -1080px -129px;
+  width: 10px;
+  height: 12px;
+}
+.content-header .btn-group-v2 #icon-loaded {
+  background-position: -880px -128px;
+  width: 10px;
+  height: 14px;
+}
