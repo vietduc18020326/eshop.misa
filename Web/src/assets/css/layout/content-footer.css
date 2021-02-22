@@ -6,7 +6,6 @@
 }
 .pagi .pagi-left {
   float: left;
-  width: 35%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -14,7 +13,7 @@
 }
 .pagi .pagi-right {
   float: right;
-  width: 20%;
+  margin-right: 10px;
   height: 100%;
   display: flex;
   align-items: center;

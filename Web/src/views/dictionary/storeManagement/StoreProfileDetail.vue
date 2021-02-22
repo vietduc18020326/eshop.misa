@@ -141,14 +141,14 @@
     </div>
     <div class="form-footer">
       <div class="store-left item-center"><strong>Trợ giúp</strong></div>
-      <div class="store-right">
+      <div class="store-right" :class="{footer_update : isDialogUpdate}">
         <button v-if="isDialogUpdate" class="btn-save item-center">
           <i class="icon-save"></i>
           <p style="color: white">Lưu</p>
         </button>
         <button type="submit" v-if="isDialogAdd" class="btn-add item-center">
           <i class="icon-add"></i>
-          <p style="color: #00577b">Lưu và thêm mới</p>
+          <p style="color: #00577b" class="text-insert">Lưu và thêm mới</p>
         </button>
         <div class="btn-cancel item-center" @click="closeDialog">
           <i class="icon-x"></i>
@@ -280,5 +280,12 @@ export default {
   top: 107%;
   left: 18%;
   font-size: 13px;
+}
+.text-insert{
+  font-weight: 600;
+}
+.footer_update{
+  width: 40%!important;
+  margin-right: -105px!important;
 }
 </style>

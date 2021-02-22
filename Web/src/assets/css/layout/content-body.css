@@ -1,16 +1,17 @@
 .content-body {
-  height: 77vh;
+  height: 79vh;
   width: 100%;
   background-color: white;
 }
 .content-body .s-table {
   width: 100%;
   text-align: center;
-  overflow: scroll;
-  height: 74vh;
+  overflow-y: scroll;
+  height: 79vh;
 }
 table {
   border-collapse: collapse;
+  width: 100%;
 }
 th,
 td {

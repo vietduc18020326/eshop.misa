@@ -1,25 +1,26 @@
 .store-dialog {
   display: block;
   width: 700px;
-  left: 42%;
+  left: 43%;
   transform: translateX(-50%);
   position: absolute;
   border: 1px solid #d1f1ff;
   background: white;
-  top: 10%;
+  top: 18%;
 }
 .store-dialog input[type="text"],
 .store-dialog textarea,
 .store-dialog select {
   width: 82%;
   margin-left: 10px;
-  height: 5vh;
+  height: 4vh;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 3px;
   resize: vertical;
+  outline-color: #6F78E1;
 }
 .form-body .input-requied .input-title {
   width: 16%;
@@ -28,7 +29,7 @@
 .store-dialog .form-header {
   width: 100%;
   height: 6vh;
-  background-color: #fff3eb;
+  background-color: #f1f1f1;
 }
 .store-dialog .form-header .title {
   float: left;
@@ -51,7 +52,7 @@
 
 .store-dialog .form-body {
   width: 100%;
-  height: 59vh;
+  height: 49vh;
 }
 .store-dialog .form-body .input-requied {
   width: 100%;
@@ -101,7 +102,8 @@
   color: #00577b;
 }
 .store-dialog .form-footer .store-right {
-  width: 43%;
+  width: 50%;
+  margin-right: -70px;
   float: right;
   height: 100%;
   display: flex;
@@ -110,11 +112,14 @@
 .store-dialog .form-footer .store-right button {
   border-radius: 4px;
   margin-right: 10px;
-  height: 6vh;
+  height: 40px;
+  width: 80px;
+  outline: none;
+  border: none;
 }
 .store-dialog .form-footer .store-right .btn-save {
   width: 23%;
-  background-color: #00577b;
+  background-color: #303679;
 }
 .store-dialog .form-footer .store-right .btn-save .icon-save {
   background: url("../../content/icon/common-icon.png") no-repeat -330px -129px;
@@ -125,7 +130,7 @@
 .store-dialog .form-footer .store-right .btn-add {
   width: 45%;
   background-color: white;
-  border: 2px solid #00577b;
+  border: 2px solid #777BA7;
 }
 .store-dialog .form-footer .store-right .btn-add .icon-add {
   background: url("../../content/icon/common-icon.png") no-repeat -29px -130px;
@@ -135,7 +140,8 @@
 }
 .store-dialog .form-footer .store-right .btn-cancel {
   margin-left: 10px;
-  width: 25%;
+  width: 80px;
+  height: 40px;
 }
 .store-dialog .form-footer .store-right .btn-cancel .icon-x {
   background: url("../../content/icon/common-icon.png") no-repeat -1104px -130px;
@@ -145,7 +151,7 @@
 }
 .store-dialog .form-footer .store-right .btn-save:hover {
   cursor: pointer;
-  background-color: #0088c1;
+  background-color: #262b65;
 }
 .store-dialog .form-footer .store-right .btn-cancel:hover,
 .store-dialog .form-footer .store-right .btn-add:hover {
@@ -158,7 +164,7 @@
   width: 35%;
   height: 23vh;
   position: absolute;
-  border: 1px solid #d1f1ff;
+  border: 1px solid #CECECE;
   top: 40%;
   left: 50%;
   transform: translateX(-50%);
@@ -173,11 +179,11 @@
 .warn .warn-header {
   width: 100%;
   height: 6vh;
-  background-color: #d1f1ff;
+  background-color: #f1f1f1;
 }
 .warn .warn-header .warn-left {
   float: left;
-  width: 33%;
+  width: 24%;
   height: 100%;
 }
 .warn .warn-header .warn-right {
@@ -197,13 +203,13 @@
   margin-top: 10px;
   width: 100%;
   height: 8vh;
-  border-bottom: 1px solid #d1f1ff;
+  border-bottom: 1px solid #EEEEEE;
 }
 .warn-body .icon-warn {
   background-image: url(../../content/icon/iconfinder_ic_help_48px_3669173.png);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 20%;
+  width: 13%;
   height: 80%;
   margin-left: 15px;
 }
@@ -217,14 +223,16 @@
 }
 .warn .btn-footer .btn-warn {
   height: 100%;
-  width: 51%;
+  width: 37%;
   float: right;
   display: flex;
   align-items: center;
 }
 .warn .btn-footer .btn-warn button {
-  height: 80%;
-  width: 100px;
+  height: 40px;
+  width: 80px!important;
+  padding-left: 10px;
+  border: none;
   border-radius: 5px;
   margin-right: 10px;
   display: flex;
@@ -233,16 +241,18 @@
 
 .btn-footer .btn-cancel {
   background-color: white;
-  height: 75%;
-  width: 100px;
+  height: 40px;
+  width: 80px;
+  outline: none;
   border-radius: 5px;
   margin-right: 10px;
 }
 
 .btn-footer .btn-delete {
-  background-color: #2ca434;
+  background-color: #E14C4C;
   margin-left: 16px;
   width: 34% !important;
+  outline: none;
   color: white;
 }
 .btn-footer .btn-delete .icon-delete {
@@ -263,7 +273,7 @@
   cursor: pointer;
 }
 .btn-footer .btn-delete:hover {
-  background-color: #3ec347;
+  background-color: #cc4646;
   cursor: pointer;
 }
 

@@ -166,7 +166,7 @@ export default {
 </script>
 <style scoped>
 .row {
-  background-color: #e5e5e5;
+  background-color: #F0F0F0;
 }
 .back_dialog {
   background: black;
