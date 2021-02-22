@@ -13,14 +13,14 @@
 .store-dialog select {
   width: 82%;
   margin-left: 10px;
-  height: 4vh;
+  height: 40px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 3px;
   resize: vertical;
-  outline-color: #6F78E1;
+  outline-color: #6f78e1;
 }
 .form-body .input-requied .input-title {
   width: 16%;
@@ -33,18 +33,18 @@
 }
 .store-dialog .form-header .title {
   float: left;
-  width: 25%;
+  margin-left: 15px;
   height: 100%;
 }
 .store-dialog .form-header .btn-x {
   float: right;
-  width: 5%;
   height: 100%;
 }
 .store-dialog .form-header .btn-x .icon-x {
   background: url("../../content/icon/common-icon.png") no-repeat -1104px -130px;
   width: 12px;
   height: 11px;
+  margin-right: 15px;
 }
 .store-dialog .form-header .btn-x .icon-x:hover {
   cursor: pointer;
@@ -52,7 +52,7 @@
 
 .store-dialog .form-body {
   width: 100%;
-  height: 49vh;
+  height: 61vh;
 }
 .store-dialog .form-body .input-requied {
   width: 100%;
@@ -130,7 +130,7 @@
 .store-dialog .form-footer .store-right .btn-add {
   width: 45%;
   background-color: white;
-  border: 2px solid #777BA7;
+  border: 2px solid #777ba7;
 }
 .store-dialog .form-footer .store-right .btn-add .icon-add {
   background: url("../../content/icon/common-icon.png") no-repeat -29px -130px;
@@ -164,7 +164,7 @@
   width: 35%;
   height: 23vh;
   position: absolute;
-  border: 1px solid #CECECE;
+  border: 1px solid #cecece;
   top: 40%;
   left: 50%;
   transform: translateX(-50%);
@@ -172,7 +172,7 @@
   z-index: 9;
 }
 .warn .warn-header .warn-left #title {
-  margin: 24px;
+  margin-left: 15px;
   font-weight: bold;
   font-size: 15px;
 }
@@ -183,13 +183,11 @@
 }
 .warn .warn-header .warn-left {
   float: left;
-  width: 24%;
   height: 100%;
 }
 .warn .warn-header .warn-right {
   float: right;
   height: 100%;
-  width: 9%;
 }
 .warn .warn-header .warn-right:hover {
   cursor: pointer;
@@ -198,18 +196,19 @@
   background: url("../../content/icon/common-icon.png") no-repeat -1104px -130px;
   width: 12px;
   height: 11px;
+  margin-right: 10px;
 }
 .warn-body {
   margin-top: 10px;
   width: 100%;
   height: 8vh;
-  border-bottom: 1px solid #EEEEEE;
+  border-bottom: 1px solid #eeeeee;
 }
 .warn-body .icon-warn {
   background-image: url(../../content/icon/iconfinder_ic_help_48px_3669173.png);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 13%;
+  width: 65px;
   height: 80%;
   margin-left: 15px;
 }
@@ -230,7 +229,7 @@
 }
 .warn .btn-footer .btn-warn button {
   height: 40px;
-  width: 80px!important;
+  width: 80px !important;
   padding-left: 10px;
   border: none;
   border-radius: 5px;
@@ -249,7 +248,7 @@
 }
 
 .btn-footer .btn-delete {
-  background-color: #E14C4C;
+  background-color: #e14c4c;
   margin-left: 16px;
   width: 34% !important;
   outline: none;

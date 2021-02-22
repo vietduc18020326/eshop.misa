@@ -1,7 +1,7 @@
 .content-body {
   height: 79vh;
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 .content-body .s-table {
   width: 100%;
@@ -13,7 +13,7 @@ table {
   border-collapse: collapse;
   width: 100%;
 }
-th{
+th {
   border: 1px solid #bbbbbb;
   padding-top: 10px;
   text-overflow: ellipsis;
@@ -81,22 +81,22 @@ td {
 .search {
   width: 95%;
   margin-left: 3px;
-  height: 29px;
-  outline-color: #6F78E1;
-  border: 1px solid #C1C1C1;
+  height: 27px;
+  outline-color: #6f78e1;
+  border: 1px solid #c1c1c1;
 }
 .input-group button {
   height: 31px;
   width: 30px;
   border: none;
-  background-color: #FCFCFC;
-  border: 1px solid #C1C1C1;
+  background-color: #fcfcfc;
+  border: 1px solid #c1c1c1;
 }
-.input-group button:hover{
+.input-group button:hover {
   cursor: pointer;
-  background-color: #E5E6EB;
+  background-color: #e5e6eb;
 }
-#storestatus select{
+#storestatus select {
   outline: none;
 }
 #storename {

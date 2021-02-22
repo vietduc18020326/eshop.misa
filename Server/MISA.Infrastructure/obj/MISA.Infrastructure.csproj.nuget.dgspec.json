@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\EShop_MISA\\Server\\MISA.Infrastructure\\MISA.Infrastructure.csproj": {}
+    "H:\\Tranning\\EShop\\eshop.misa\\Server\\MISA.Infrastructure\\MISA.Infrastructure.csproj": {}
   },
   "projects": {
-    "E:\\EShop_MISA\\Server\\MISA.Common\\MISA.Common.csproj": {
+    "H:\\Tranning\\EShop\\eshop.misa\\Server\\MISA.Common\\MISA.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\EShop_MISA\\Server\\MISA.Common\\MISA.Common.csproj",
+        "projectUniqueName": "H:\\Tranning\\EShop\\eshop.misa\\Server\\MISA.Common\\MISA.Common.csproj",
         "projectName": "MISA.Common",
-        "projectPath": "E:\\EShop_MISA\\Server\\MISA.Common\\MISA.Common.csproj",
-        "packagesPath": "C:\\Users\\pvduc\\.nuget\\packages\\",
-        "outputPath": "E:\\EShop_MISA\\Server\\MISA.Common\\obj\\",
+        "projectPath": "H:\\Tranning\\EShop\\eshop.misa\\Server\\MISA.Common\\MISA.Common.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "H:\\Tranning\\EShop\\eshop.misa\\Server\\MISA.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pvduc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -49,36 +49,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\EShop_MISA\\Server\\MISA.Infrastructure\\MISA.Infrastructure.csproj": {
+    "H:\\Tranning\\EShop\\eshop.misa\\Server\\MISA.Infrastructure\\MISA.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\EShop_MISA\\Server\\MISA.Infrastructure\\MISA.Infrastructure.csproj",
+        "projectUniqueName": "H:\\Tranning\\EShop\\eshop.misa\\Server\\MISA.Infrastructure\\MISA.Infrastructure.csproj",
         "projectName": "MISA.Infrastructure",
-        "projectPath": "E:\\EShop_MISA\\Server\\MISA.Infrastructure\\MISA.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\pvduc\\.nuget\\packages\\",
-        "outputPath": "E:\\EShop_MISA\\Server\\MISA.Infrastructure\\obj\\",
+        "projectPath": "H:\\Tranning\\EShop\\eshop.misa\\Server\\MISA.Infrastructure\\MISA.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "H:\\Tranning\\EShop\\eshop.misa\\Server\\MISA.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pvduc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -92,8 +82,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "E:\\EShop_MISA\\Server\\MISA.Common\\MISA.Common.csproj": {
-                "projectPath": "E:\\EShop_MISA\\Server\\MISA.Common\\MISA.Common.csproj"
+              "H:\\Tranning\\EShop\\eshop.misa\\Server\\MISA.Common\\MISA.Common.csproj": {
+                "projectPath": "H:\\Tranning\\EShop\\eshop.misa\\Server\\MISA.Common\\MISA.Common.csproj"
               }
             }
           }
@@ -131,22 +121,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

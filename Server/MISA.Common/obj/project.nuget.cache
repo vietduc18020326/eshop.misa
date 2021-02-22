@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "utlyPHMdm0TlKbvZyaS+Imf1L/F+4ODEz9hH7wilyR/OaP+JfrTYr6VvMdplbQ1c6Kk3QNVrE19/QljrDhTYyA==",
+  "dgSpecHash": "ydBZJaoXPhacThJ9WTdiFMp43sZ9fG56i+OsCbHVq7QL2wX2bZYXQ2Fiqb9Ufrk0FH/9jQ3NEGQNvLC1Ms6hkQ==",
   "success": true,
-  "projectFilePath": "E:\\EShop_MISA\\Server\\MISA.Common\\MISA.Common.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\pvduc\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\pvduc\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512"
-  ],
+  "projectFilePath": "H:\\Tranning\\EShop\\eshop.misa\\Server\\MISA.Common\\MISA.Common.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

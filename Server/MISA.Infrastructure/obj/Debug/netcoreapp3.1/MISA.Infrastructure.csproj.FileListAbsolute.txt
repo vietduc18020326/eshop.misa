@@ -58,3 +58,15 @@ E:\EShop_MISA\Server\MISA.Infrastructure\obj\Debug\netcoreapp3.1\MISA.Infrastruc
 E:\EShop_MISA\Server\MISA.Infrastructure\obj\Debug\netcoreapp3.1\MISA.Infrastructure.csproj.CopyComplete
 E:\EShop_MISA\Server\MISA.Infrastructure\obj\Debug\netcoreapp3.1\MISA.Infrastructure.dll
 E:\EShop_MISA\Server\MISA.Infrastructure\obj\Debug\netcoreapp3.1\MISA.Infrastructure.pdb
+H:\Tranning\EShop\eshop.misa\Server\MISA.Infrastructure\bin\Debug\netcoreapp3.1\MISA.Infrastructure.deps.json
+H:\Tranning\EShop\eshop.misa\Server\MISA.Infrastructure\bin\Debug\netcoreapp3.1\MISA.Infrastructure.dll
+H:\Tranning\EShop\eshop.misa\Server\MISA.Infrastructure\bin\Debug\netcoreapp3.1\MISA.Infrastructure.pdb
+H:\Tranning\EShop\eshop.misa\Server\MISA.Infrastructure\bin\Debug\netcoreapp3.1\MISA.Common.dll
+H:\Tranning\EShop\eshop.misa\Server\MISA.Infrastructure\bin\Debug\netcoreapp3.1\MISA.Common.pdb
+H:\Tranning\EShop\eshop.misa\Server\MISA.Infrastructure\obj\Debug\netcoreapp3.1\MISA.Infrastructure.csprojAssemblyReference.cache
+H:\Tranning\EShop\eshop.misa\Server\MISA.Infrastructure\obj\Debug\netcoreapp3.1\MISA.Infrastructure.AssemblyInfoInputs.cache
+H:\Tranning\EShop\eshop.misa\Server\MISA.Infrastructure\obj\Debug\netcoreapp3.1\MISA.Infrastructure.AssemblyInfo.cs
+H:\Tranning\EShop\eshop.misa\Server\MISA.Infrastructure\obj\Debug\netcoreapp3.1\MISA.Infrastructure.csproj.CoreCompileInputs.cache
+H:\Tranning\EShop\eshop.misa\Server\MISA.Infrastructure\obj\Debug\netcoreapp3.1\MISA.Infrastructure.csproj.CopyComplete
+H:\Tranning\EShop\eshop.misa\Server\MISA.Infrastructure\obj\Debug\netcoreapp3.1\MISA.Infrastructure.dll
+H:\Tranning\EShop\eshop.misa\Server\MISA.Infrastructure\obj\Debug\netcoreapp3.1\MISA.Infrastructure.pdb
