@@ -38,3 +38,14 @@ H:\Tranning\BTMisa\Server\MISA.Common\obj\Debug\netcoreapp3.1\MISA.Common.Assemb
 H:\Tranning\BTMisa\Server\MISA.Common\obj\Debug\netcoreapp3.1\MISA.Common.csproj.CoreCompileInputs.cache
 H:\Tranning\BTMisa\Server\MISA.Common\obj\Debug\netcoreapp3.1\MISA.Common.dll
 H:\Tranning\BTMisa\Server\MISA.Common\obj\Debug\netcoreapp3.1\MISA.Common.pdb
+E:\EShop_MISA\Server\MISA.Common\bin\Debug\netcoreapp3.1\MISA.Common.deps.json
+E:\EShop_MISA\Server\MISA.Common\bin\Debug\netcoreapp3.1\MISA.Common.dll
+E:\EShop_MISA\Server\MISA.Common\bin\Debug\netcoreapp3.1\MISA.Common.pdb
+E:\EShop_MISA\Server\MISA.Common\obj\Debug\netcoreapp3.1\MISA.Common.csprojAssemblyReference.cache
+E:\EShop_MISA\Server\MISA.Common\obj\Debug\netcoreapp3.1\MISA.Common.Properties.Resources.resources
+E:\EShop_MISA\Server\MISA.Common\obj\Debug\netcoreapp3.1\MISA.Common.csproj.GenerateResource.cache
+E:\EShop_MISA\Server\MISA.Common\obj\Debug\netcoreapp3.1\MISA.Common.AssemblyInfoInputs.cache
+E:\EShop_MISA\Server\MISA.Common\obj\Debug\netcoreapp3.1\MISA.Common.AssemblyInfo.cs
+E:\EShop_MISA\Server\MISA.Common\obj\Debug\netcoreapp3.1\MISA.Common.csproj.CoreCompileInputs.cache
+E:\EShop_MISA\Server\MISA.Common\obj\Debug\netcoreapp3.1\MISA.Common.dll
+E:\EShop_MISA\Server\MISA.Common\obj\Debug\netcoreapp3.1\MISA.Common.pdb
