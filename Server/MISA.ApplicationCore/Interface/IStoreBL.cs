@@ -13,6 +13,11 @@ namespace MISA.ApplicationCore.Interface
         /// <param name="store">thuộc tính cửa hàng</param>
         /// <returns>Trả về số lượng bản ghi thành công</returns>
         ServiceResult InsertStore(Store store);
+        /// <summary>
+        /// Cập nhật dữ liệu cửa hàng
+        /// </summary>
+        /// <param name="store">thuộc tính cửa hàng</param>
+        /// <returns></returns>
         ServiceResult UpdateStore(Store store);
         /// <summary>
         /// kiểm tra trùng mã cửa hàng khi thêm mới
@@ -20,6 +25,11 @@ namespace MISA.ApplicationCore.Interface
         /// <param name="store">thuộc tính cửa hàng</param>
         /// <returns>Trả về kiểu ServiceResult</returns>
         ServiceResult CheckDuplicateInsert(Store store);
+        /// <summary>
+        /// Kiểm tra thuộc tính không được phép trùng khi cập nhật dữ liệu
+        /// </summary>
+        /// <param name="store">thuộc tính cửa hàng</param>
+        /// <returns></returns>
         ServiceResult CheckDuplicateUpdate(Store store);
         /// <summary>
         /// kiểm tra những trường bắt buộc nhập

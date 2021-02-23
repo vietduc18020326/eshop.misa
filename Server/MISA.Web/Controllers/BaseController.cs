@@ -21,7 +21,10 @@ namespace MISA.Web.Controllers
         {
             _baseBL = baseBL;
         }
-        
+        /// <summary>
+        /// Lấy toàn bộ dữ liệu của thuộc tính T
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult Get()
         {
@@ -35,6 +38,11 @@ namespace MISA.Web.Controllers
             }
             return StatusCode(200, serviceResult.Data);
         }
+        /// <summary>
+        /// Lấy toàn bộ dữ liệu theo khóa chính
+        /// </summary>
+        /// <param name="id">khóa chính</param>
+        /// <returns></returns>
         [HttpGet("{id}")]
         public IActionResult Get1(string id)
         {

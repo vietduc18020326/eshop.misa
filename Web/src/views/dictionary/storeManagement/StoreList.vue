@@ -125,10 +125,7 @@ export default {
   async mounted() {
     this.quantityStore = await storeServices.quantityStore();
     this.quantityPage = Math.ceil(this.quantityStore / this.pagi);
-    this.Stores = await storeServices.GetStoreOfPage(
-      this.offset,
-      this.quantityPage
-    );
+    this.reLoad();
   },
   methods: {
     openDialog: function(dialogAdd, dialogDelete, dialogUpdate) {
