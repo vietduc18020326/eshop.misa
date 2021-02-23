@@ -1,7 +1,7 @@
 <template>
   <div class="content">
     <div class="content-center">
-      <ButtonEvent @OpenDialog="openDialog" />
+      <ButtonEvent @OpenDialog="openDialog" @reLoadData="reLoadStore" />
       <div class="content-body">
         <div class="s-table" id="style-scroll">
           <table>
@@ -57,6 +57,7 @@
                 v-for="(store, index) in Stores"
                 :key="index"
                 @click="handleClick(index)"
+                @dblclick="handleUpdate(index)"
                 class="data-row"
                 :id="index"
               >
@@ -159,13 +160,17 @@ export default {
         this.quantityPage
       );
       this.$emit("ClickStore", this.Store.StoreName);
+      var trList = document.querySelectorAll(".data-row");
+      for (let tr of trList) {
+        if (tr.classList.contains("row_active")) {
+          tr.classList.remove("row_active");
+          break;
+        }
+      }
     },
-    loadStore: async function(number) {
+    loadStore: function(number) {
       this.offset = (number - 1) * this.quantityPage;
-      this.Stores = await storeServices.GetStoreOfPage(
-        this.offset,
-        this.quantityPage
-      );
+      this.reLoad();
     },
     handleClick: function(index) {
       this.Store = this.Stores[index];
@@ -180,6 +185,25 @@ export default {
       var clickedTr = document.getElementById(index);
       clickedTr.classList.add("row_active");
       this.$emit("ClickStore", this.Store.StoreName);
+    },
+    handleUpdate: function(index) {
+      this.isDialog = true;
+      this.isDialogDelete = false;
+      this.isDialogUpdate = true;
+      this.isDialogAdd = false;
+      this.Store = this.Stores[index];
+    },
+    reLoadStore: function(isReload) {
+      this.Stores = {};
+      if (isReload) {
+        setTimeout(this.reLoad, 500);
+      }
+    },
+    reLoad: async function() {
+      this.Stores = await storeServices.GetStoreOfPage(
+        this.offset,
+        this.quantityPage
+      );
     },
     statusStore: function(status) {
       if (status == 0) {
@@ -198,6 +222,4 @@ export default {
   },
 };
 </script>
-<style scoped>
-
-</style>
+<style scoped></style>

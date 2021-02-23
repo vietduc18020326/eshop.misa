@@ -1,15 +1,15 @@
 <template>
   <div class="warn" title="Cảnh báo">
     <div class="warn-header">
-      <div class="warn-left item-center">
+      <div class="warn-left">
         <p id="title">Xóa nhân viên</p>
       </div>
-      <div class="warn-right item-center" @click="closeDialog">
+      <div class="warn-right" @click="closeDialog">
         <i class="icon-x"></i>
       </div>
       <div class="clear"></div>
     </div>
-    <div class="warn-body item-center">
+    <div class="warn-body">
       <i class="icon-warn"></i>
       <div id="title-warn">
         Bạn có chắc chắn muốn xóa <strong>{{ Store.StoreName }}</strong> khỏi
@@ -51,7 +51,12 @@ export default {
     deleteStore: async function() {
       await storeServices.deleteStore(this.Store.StoreId);
       this.closeDialog();
-      this.$alert("", "Xóa thành công", "success");
+      this.$fire({
+        title: "Xóa thành công",
+        type: "success",
+        timer: 2000,
+        showConfirmButton: false,
+      });
     },
   },
 };

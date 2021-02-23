@@ -5,9 +5,32 @@
 @import url("./layout/content-body.css");
 @import url("./layout/content-footer.css");
 @import url("./layout/dialog.css");
+@font-face {
+  font-family: "Notosan-bold";
+  src: url("../content/fonts/notosans-bold.3ede5aff.woff2") format("opentype");
+}
+
+@font-face {
+  font-family: "Notosan-italic";
+  src: url("../content/fonts/notosans-italic.1c1aaac9.woff2") format("opentype");
+}
+
+@font-face {
+  font-family: "Notosan-regular";
+  src: url("../content/fonts/notosans-regular.2cb88a13.woff2")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Notosan-semibold";
+  src: url("../content/fonts/notosans-semibold.df3e6dc4.woff2")
+    format("opentype");
+}
 
 body {
   margin: 0px;
+  font-family: "Notosan-regular";
+  font-size: 13px;
 }
 #app {
   position: relative;
@@ -16,7 +39,7 @@ body {
 .panel-left {
   width: 200px;
   height: 100vh;
-  background-color: #026b97;
+  background-color: #2b3173;
 }
 .panel-right {
   /* position: absolute;

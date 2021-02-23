@@ -10,6 +10,14 @@
       {{ btn.name }}
     </div>
     <div
+      class="btn_notactive"
+      v-for="(btn, index) in BtnsNotActive"
+      :key="index"
+    >
+      <i :id="btn.id" class="btn-icon"></i>
+      {{ btn.name }}
+    </div>
+    <div
       class="btn-group-v2 item-center"
       v-for="(btn, index) in btns"
       :key="index + 2"
@@ -25,10 +33,8 @@ export default {
   name: "ButtonEvent",
   data() {
     return {
-      Btns: [
-        { name: "Thêm mới", id: "icon-add", key: 0 },
-        { name: "Nhân bản", id: "icon-humane", key: 1 },
-      ],
+      Btns: [{ name: "Thêm mới", id: "icon-add", key: 0 }],
+      BtnsNotActive: [{ name: "Nhân bản", id: "icon-humane", key: 1 }],
       btns: [
         { name: "Sửa", id: "icon-update", key: 2 },
         { name: "Xóa", id: "icon-delete", key: 3 },
@@ -37,6 +43,7 @@ export default {
       isDialogAdd: false,
       isDialogDelete: false,
       isDialogUpdate: false,
+      isReload: false,
     };
   },
   methods: {
@@ -77,7 +84,23 @@ export default {
           this.isDialogUpdate
         );
       }
+      if (index == 4) {
+        this.isReload = true;
+        this.$emit("reLoadData", this.isReload);
+      }
     },
   },
 };
 </script>
+<style scoped>
+.btn_notactive {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 10px;
+  border-right: 3px solid #232172;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+</style>
