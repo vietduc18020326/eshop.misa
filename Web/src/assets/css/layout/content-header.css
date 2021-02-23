@@ -6,8 +6,8 @@
 }
 .content .content-center {
   padding: 10px;
-  padding-left: 20px !important;
-  padding-right: 20px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
 }
 .content-header .btn-group {
   display: flex;
