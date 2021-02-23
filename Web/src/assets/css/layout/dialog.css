@@ -153,10 +153,13 @@
   cursor: pointer;
   background-color: #262b65;
 }
-.store-dialog .form-footer .store-right .btn-cancel:hover,
-.store-dialog .form-footer .store-right .btn-add:hover {
+.store-dialog .form-footer .store-right .btn-cancel:hover {
   cursor: pointer;
   background-color: #d1f1ff;
+}
+.store-dialog .form-footer .store-right .btn-add:hover {
+  cursor: pointer;
+  background-color: #777ba7;
 }
 
 .warn {
@@ -196,12 +199,13 @@
   width: 12px;
   height: 11px;
   margin-right: 10px;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 .warn-body {
   margin-top: 24px;
   margin-bottom: 24px;
   display: flex;
+  align-items: center;
   width: 100%;
 }
 .warn-body .icon-warn {

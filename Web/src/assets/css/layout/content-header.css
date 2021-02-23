@@ -42,7 +42,10 @@
   width: 12px;
   height: 11px;
 }
-.content-header .btn-group #icon-humane {
+.content-header .btn_notactive #icon-humane {
+  background: url("../../content/icon/common-icon.png");
+  background-repeat: no-repeat;
+  margin-right: 10px;
   background-position: -978px -127px;
   width: 15px;
   height: 15px;

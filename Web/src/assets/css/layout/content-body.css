@@ -72,6 +72,7 @@ td {
   margin-top: 5px;
   position: relative;
   width: 100%;
+  margin-bottom: 1px;
 }
 .input-group {
   position: absolute;
@@ -80,7 +81,7 @@ td {
 }
 .search {
   width: 95%;
-  margin-left: 3px;
+  margin-left: 1px;
   height: 27px;
   outline-color: #6f78e1;
   border: 1px solid #c1c1c1;
