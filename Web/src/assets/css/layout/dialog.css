@@ -28,7 +28,7 @@
 }
 .store-dialog .form-header {
   width: 100%;
-  height: 6vh;
+  height: 40px;
   background-color: #f1f1f1;
 }
 .store-dialog .form-header .title {
@@ -52,7 +52,7 @@
 
 .store-dialog .form-body {
   width: 100%;
-  height: 61vh;
+  height: 455px;
 }
 .store-dialog .form-body .input-requied {
   width: 100%;
@@ -91,7 +91,7 @@
 
 .store-dialog .form-footer {
   width: 100%;
-  height: 8vh;
+  height: 65px;
   border-top: 1px solid #bbbbbb;
   background-color: white;
 }
