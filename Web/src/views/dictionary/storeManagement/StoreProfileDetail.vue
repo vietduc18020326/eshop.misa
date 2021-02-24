@@ -81,6 +81,7 @@
               class="input-notrequied"
               v-model="Store.CountryId"
               @click="chooseCountry"
+              required
             >
               <option
                 v-for="(country, index) in Country"
@@ -301,6 +302,15 @@ export default {
 }
 /* .footer_update {
   width: 40% !important;
-  margin-right: -105px !important;
-} */
+  /* margin-rght: -105px !important; */
+
+select:required:invalid {
+  color: gray;
+}
+option[value="-1"][disabled] {
+  display: none;
+}
+option {
+  color: black;
+}
 </style>

@@ -145,7 +145,9 @@ export default {
         this.isDialog = false;
         this.isDialogDelete = false;
       }
-      if (this.isDialogAdd) this.Store = {};
+      if (this.isDialogAdd) {
+        this.Store = {};
+      }
     },
     closeDialog: async function() {
       this.isDialog = false;

@@ -102,5 +102,7 @@ export default {
   border-right: 3px solid #232172;
   padding-left: 12px;
   padding-right: 12px;
+  opacity: 0.6;
+  cursor: pointer;
 }
 </style>

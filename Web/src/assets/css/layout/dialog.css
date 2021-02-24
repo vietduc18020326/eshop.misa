@@ -7,6 +7,7 @@
   border: 1px solid #d1f1ff;
   background: white;
   top: 12%;
+  z-index: 3;
 }
 .store-dialog input[type="text"],
 .store-dialog textarea,

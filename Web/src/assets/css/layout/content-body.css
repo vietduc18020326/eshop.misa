@@ -18,6 +18,11 @@ th {
   padding-top: 10px;
   text-overflow: ellipsis;
   white-space: nowrap;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f0f0f0;
 }
 td {
   border: 1px solid #bbbbbb;
@@ -62,6 +67,7 @@ td {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 2;
 }
 .row_active {
   background-color: #e2e4f1;
