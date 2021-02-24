@@ -80,6 +80,7 @@
       <StoreProfileDetail
         v-if="isDialogAdd | isDialogUpdate"
         @CloseDialog="closeDialog"
+        @handleAlert="HandleAlert"
         :isDialog="isDialogAdd"
         :isUpdate="isDialogUpdate"
         :store="Store"
@@ -87,8 +88,10 @@
       <DialogWarn
         v-if="isDialogDelete"
         @CloseDialog="closeDialog"
+        @hanldeAlert="HandleAlert"
         :store="Store"
       />
+      <div id="snackbar"></div>
     </div>
   </div>
 </template>
@@ -111,6 +114,7 @@ export default {
     return {
       Stores: [],
       Store: {},
+      Alert: {},
       isDialog: false,
       isDialogAdd: false,
       isDialogDelete: false,
@@ -164,6 +168,15 @@ export default {
           break;
         }
       }
+    },
+    HandleAlert: function(alert) {
+      var x = document.getElementById("snackbar");
+      x.innerHTML = alert.Text;
+      x.className = "show";
+      console.log(alert.Text);
+      setTimeout(() => {
+        x.className = x.className.replace("show", "");
+      }, 3000);
     },
     loadStore: function(number) {
       this.offset = (number - 1) * this.quantityPage;

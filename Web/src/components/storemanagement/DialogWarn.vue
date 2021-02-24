@@ -39,6 +39,10 @@ export default {
   data() {
     return {
       Store: {},
+      Alert: {
+        Text: "",
+        Success: false,
+      },
     };
   },
   mounted() {
@@ -46,17 +50,14 @@ export default {
   },
   methods: {
     closeDialog: function() {
-      this.$emit("CloseDialog");
+      this.$emit("CloseDialog", this.Alert);
     },
     deleteStore: async function() {
       await storeServices.deleteStore(this.Store.StoreId);
+      this.Alert.Success = true;
+      this.Alert.Text = "Xóa thành công";
+      this.$emit("hanldeAlert", this.Alert);
       this.closeDialog();
-      this.$fire({
-        title: "Xóa thành công",
-        type: "success",
-        timer: 2000,
-        showConfirmButton: false,
-      });
     },
   },
 };

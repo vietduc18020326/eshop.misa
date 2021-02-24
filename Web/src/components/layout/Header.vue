@@ -10,7 +10,7 @@
       <div class="account item-center">
         <div class="user-icon"></div>
         <div class="username">PNVĐ</div>
-        <div class="down"></div>
+        <i class="down"></i>
       </div>
       <div class="item-center x-btn-callcenter">
         <i class="icon-telephone"> </i>

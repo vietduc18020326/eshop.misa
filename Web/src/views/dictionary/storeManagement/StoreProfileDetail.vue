@@ -147,11 +147,11 @@
       <div class="form-footer">
         <div class="store-left item-center"><strong>Trợ giúp</strong></div>
         <div class="store-right" :class="{ footer_update: isDialogUpdate }">
-          <button v-if="isDialogUpdate" class="btn-save item-center">
+          <button class="btn-save item-center">
             <i class="icon-save"></i>
             <p style="color: white">Lưu</p>
           </button>
-          <button type="submit" v-if="isDialogAdd" class="btn-add item-center">
+          <button class="btn-add item-center">
             <i class="icon-add"></i>
             <p style="color: #00577b" class="text-insert">Lưu và thêm mới</p>
           </button>
@@ -186,6 +186,10 @@ export default {
       City: [],
       District: [],
       Communes: [],
+      Alert: {
+        Text: "",
+        Success: false,
+      },
     };
   },
   validations: {
@@ -218,7 +222,7 @@ export default {
     closeDialog: function() {
       this.isDialogAdd = false;
       this.isDialogUpdate = false;
-      this.$emit("CloseDialog");
+      this.$emit("CloseDialog", this.Alert);
     },
     handleUpdate: async function() {
       this.$v.Store.$touch();
@@ -231,13 +235,18 @@ export default {
       }
       var resultUpdate = await storeServices.updateStore(this.Store);
       if (!resultUpdate.Success) {
-        this.$alert(resultUpdate.data, "Lỗi cập nhật", "error");
+        this.alertForm("Mã cửa hàng bị trùng. Vui lòng nhập lại", false);
         this.$refs.storeCode.focus();
         return;
       } else {
-        this.handleAlert("success", "Cập nhật thành công");
+        this.alertForm("Cập nhật thành công", true);
         this.closeDialog();
       }
+    },
+    alertForm: function(text, success) {
+      this.Alert.Text = text;
+      this.Alert.Success = success;
+      this.$emit("handleAlert", this.Alert);
     },
     hanldeInsert: async function() {
       this.$v.Store.$touch();
@@ -249,21 +258,13 @@ export default {
       }
       var resultInsert = await storeServices.insertStore(this.Store);
       if (!resultInsert.Success) {
-        this.$alert(resultInsert.data, "Lỗi thêm mới", "error");
+        this.alertForm("Mã cửa hàng bị trùng. Vui lòng nhập lại", false);
         this.$refs.storeCode.focus();
         return;
       } else {
-        this.handleAlert("success", "Thêm mới thành công");
+        this.alertForm("Thêm mới thành công", true);
         this.closeDialog();
       }
-    },
-    handleAlert: function(type, title) {
-      this.$fire({
-        title: title,
-        type: type,
-        timer: 2000,
-        showConfirmButton: false,
-      });
     },
     hanldeSubmit: function() {
       if (this.isDialogUpdate) this.handleUpdate();
@@ -298,8 +299,8 @@ export default {
 .text-insert {
   font-weight: 600;
 }
-.footer_update {
+/* .footer_update {
   width: 40% !important;
   margin-right: -105px !important;
-}
+} */
 </style>

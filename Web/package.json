@@ -17,6 +17,7 @@
     "sweetalert2": "^10.15.5",
     "vue": "^2.6.11",
     "vue-axios": "^3.2.4",
+    "vue-dialog-loading": "^0.5.3",
     "vue-router": "^3.5.1",
     "vue-simple-alert": "^1.1.1",
     "vuelidate": "^0.7.6",

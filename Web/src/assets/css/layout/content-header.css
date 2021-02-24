@@ -65,3 +65,10 @@
   width: 10px;
   height: 14px;
 }
+.down {
+  background-image: url("../../content/icon/default-toolbar-small-s-arrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 16px;
+}
