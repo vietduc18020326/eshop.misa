@@ -6190,19 +6190,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\pvduc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\Tranning\\EShop\\eshop.misa\\Server\\MISA.Web\\MISA.Web.csproj",
+      "projectUniqueName": "E:\\New folder\\eshop.misa\\Server\\MISA.Web\\MISA.Web.csproj",
       "projectName": "MISA.Web",
-      "projectPath": "H:\\Tranning\\EShop\\eshop.misa\\Server\\MISA.Web\\MISA.Web.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "H:\\Tranning\\EShop\\eshop.misa\\Server\\MISA.Web\\obj\\",
+      "projectPath": "E:\\New folder\\eshop.misa\\Server\\MISA.Web\\MISA.Web.csproj",
+      "packagesPath": "C:\\Users\\pvduc\\.nuget\\packages\\",
+      "outputPath": "E:\\New folder\\eshop.misa\\Server\\MISA.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\pvduc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6216,11 +6216,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "H:\\Tranning\\EShop\\eshop.misa\\Server\\MISA.ApplicationCore\\MISA.ApplicationCore.csproj": {
-              "projectPath": "H:\\Tranning\\EShop\\eshop.misa\\Server\\MISA.ApplicationCore\\MISA.ApplicationCore.csproj"
+            "E:\\New folder\\eshop.misa\\Server\\MISA.ApplicationCore\\MISA.ApplicationCore.csproj": {
+              "projectPath": "E:\\New folder\\eshop.misa\\Server\\MISA.ApplicationCore\\MISA.ApplicationCore.csproj"
             },
-            "H:\\Tranning\\EShop\\eshop.misa\\Server\\MISA.Common\\MISA.Common.csproj": {
-              "projectPath": "H:\\Tranning\\EShop\\eshop.misa\\Server\\MISA.Common\\MISA.Common.csproj"
+            "E:\\New folder\\eshop.misa\\Server\\MISA.Common\\MISA.Common.csproj": {
+              "projectPath": "E:\\New folder\\eshop.misa\\Server\\MISA.Common\\MISA.Common.csproj"
             }
           }
         }
@@ -6276,7 +6276,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -131,7 +131,19 @@ export default {
     this.quantityPage = Math.ceil(this.quantityStore / this.pagi);
     this.reLoad();
   },
+  updated() {
+    var trList = document.querySelectorAll(".data-row");
+      for (let tr of trList) {
+        if (tr.classList.contains("row_active")) {
+          tr.classList.remove("row_active");
+          this.Store = {};
+          this.isClickRow = false
+          break;
+        }
+      }
+  },
   methods: {
+    //Mở dialog
     openDialog: function(dialogAdd, dialogDelete, dialogUpdate) {
       this.isDialog = true;
       this.isDialogAdd = dialogAdd;
@@ -149,6 +161,7 @@ export default {
         this.Store = {};
       }
     },
+    //đóng dialog
     closeDialog: async function() {
       this.isDialog = false;
       this.isDialogAdd = false;
@@ -171,6 +184,7 @@ export default {
         }
       }
     },
+    //xử lí câu thông báo khi thêm mới, cập nhật và xóa dữ liệu thành công hay có lỗi
     HandleAlert: function(alert) {
       var x = document.getElementById("snackbar");
       x.innerHTML = alert.Text;
@@ -180,10 +194,12 @@ export default {
         x.className = x.className.replace("show", "");
       }, 3000);
     },
+    //lấy dữ liệu theo trang
     loadStore: function(number) {
       this.offset = (number - 1) * this.quantityPage;
       this.reLoad();
     },
+    //Xử lí khi click vào dữ liệu trong bảng
     handleClick: function(index) {
       this.Store = this.Stores[index];
       this.isClickRow = true;
@@ -198,6 +214,7 @@ export default {
       clickedTr.classList.add("row_active");
       this.$emit("ClickStore", this.Store.StoreName);
     },
+    //cập nhật khi double click vào bảng
     handleUpdate: function(index) {
       this.isDialog = true;
       this.isDialogDelete = false;
@@ -205,6 +222,7 @@ export default {
       this.isDialogAdd = false;
       this.Store = this.Stores[index];
     },
+    //Xử lí khi ấn nút nạp
     reLoadStore: function(isReload) {
       this.Stores = {};
       if (isReload) {

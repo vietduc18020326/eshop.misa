@@ -74,6 +74,7 @@ input[type="text"] {
   left: 50%;
   top: 30px;
   font-size: 17px;
+  z-index: 4;
 }
 
 #snackbar.show {

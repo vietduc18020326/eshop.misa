@@ -12,7 +12,7 @@
         <div class="username">PNVĐ</div>
         <i class="down"></i>
       </div>
-      <div class="item-center x-btn-callcenter">
+      <div class="x-btn-callcenter">
         <i class="icon-telephone"> </i>
       </div>
       <div class="item-center x-btn-notify">

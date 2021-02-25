@@ -81,7 +81,6 @@
               class="input-notrequied"
               v-model="Store.CountryId"
               @click="chooseCountry"
-              required
             >
               <option
                 v-for="(country, index) in Country"
@@ -146,7 +145,10 @@
         </div>
       </div>
       <div class="form-footer">
-        <div class="store-left item-center"><strong>Trợ giúp</strong></div>
+        <div class="store-left">
+          <i class="icon-help"></i>
+          <strong>Trợ giúp</strong>
+        </div>
         <div class="store-right" :class="{ footer_update: isDialogUpdate }">
           <button class="btn-save item-center">
             <i class="icon-save"></i>
@@ -220,11 +222,13 @@ export default {
     this.focusInput();
   },
   methods: {
+    //đóng dialog
     closeDialog: function() {
       this.isDialogAdd = false;
       this.isDialogUpdate = false;
       this.$emit("CloseDialog", this.Alert);
     },
+    //Xử lí cập nhật khi submit
     handleUpdate: async function() {
       this.$v.Store.$touch();
       if (this.$v.Store.$invalid) {
@@ -244,11 +248,13 @@ export default {
         this.closeDialog();
       }
     },
+    //Xử lí form thông báo khi submit cập nhật, thêm mới
     alertForm: function(text, success) {
       this.Alert.Text = text;
       this.Alert.Success = success;
       this.$emit("handleAlert", this.Alert);
     },
+    //Xử lí thêm mới khi submit
     hanldeInsert: async function() {
       this.$v.Store.$touch();
       if (this.$v.Store.$invalid) {
@@ -271,12 +277,15 @@ export default {
       if (this.isDialogUpdate) this.handleUpdate();
       if (this.isDialogAdd) this.hanldeInsert();
     },
+    //Lấy dữ liệu city khi đã chọn country
     chooseCountry: async function() {
       this.City = await cityServices.getCityById(this.Store.CountryId);
     },
+    //Lẩy dữ liệu district khi chọn city
     chooseCity: async function() {
       this.District = await districtServices.getDistrictById(this.Store.CityId);
     },
+    //Lấy dữ liệu communes khi chọn district
     chooseDistrict: async function() {
       this.Communes = await communeServices.getCommunesById(
         this.Store.DistrictId
@@ -313,4 +322,6 @@ option[value="-1"][disabled] {
 option {
   color: black;
 }
+
+
 </style>

@@ -41,28 +41,33 @@ export default {
   },
   props: ["quantityStore", "Stores"],
   methods: {
+    //Xử lí khi ấn nút trở về trang đầu tiên
     handleFirstPage: function() {
       this.Page = 1;
       this.$emit("loadData", this.Page);
     },
+    //Xử lí khi trở về trang phía trước
     handlePrevPage: function() {
       if (this.Page > 1) {
         this.Page--;
         this.$emit("loadData", this.Page);
       }
     },
+    //Xử lí khi sang trang tiếp theo
     handleNextPage: function() {
       if (this.Page < this.Quantity) {
         this.Page++;
         this.$emit("loadData", this.Page);
       }
     },
+    //Xử lí khi về cuối trang
     handleLastPage: function() {
       this.Page = this.Quantity;
       this.$emit("loadData", this.Page);
     },
   },
   watch: {
+    //Xử lí khi nhập trang thông qua input
     Page: function() {
       if (this.Page == "") this.$emit("loadData", 1);
       else if (this.Page > 10) this.$emit("loadData", 10);
